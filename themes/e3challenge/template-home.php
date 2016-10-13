@@ -43,6 +43,9 @@ get_header(); ?>
 					<h2 class="section-header">Upcoming Events</h2>
 					<div class="events">
 						<?php
+						/**
+						 * Query for events, ordered by date starting with oldest events.
+						 */
 							$args = [
 								'post_type'      => 'event',
 								'posts_per_page' => -1,

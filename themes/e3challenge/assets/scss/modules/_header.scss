@@ -75,4 +75,11 @@
 			text-transform: uppercase;
 		}
 	}
+
+	li {
+
+		&:hover > a {
+			color: $scooter;
+		}
+	}
 }

@@ -12,7 +12,7 @@
 * {
 	box-sizing: border-box;
 }
-
+/* stylelint-disable */
 // Media Queries
 @mixin bp($point, $min: false, $max: false) {
   @if $point == desktop {
@@ -133,3 +133,4 @@
     }
   }
 }
+/* stylelint-enable */

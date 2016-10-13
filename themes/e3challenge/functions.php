@@ -12,6 +12,9 @@ class E3_Challenge {
 
 	}
 
+	/**
+	 * Register the events post type.
+	 */
 	public function cpt_registration() {
 		include_once( 'inc/class-cpt.php' );
 
@@ -39,6 +42,9 @@ class E3_Challenge {
 		return $mimes;
 	}
 
+	/**
+	 * Helper function for getting post meta values.
+	 */
 	static function get_field( $field_name = null, $id = null ) {
 		if ( null === $id ) {
 			$id = get_the_ID();
@@ -89,6 +95,9 @@ class E3_Challenge {
 		));
 	}
 
+	/**
+	 * Add custom thumbnail size for events.
+	 */
 	public function custom_images() {
 		add_image_size( 'event-thumb', 385, 200, [ 'left', 'top' ] );
 	}
