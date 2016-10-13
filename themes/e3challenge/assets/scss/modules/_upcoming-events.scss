@@ -1,0 +1,141 @@
+.upcoming-events {
+
+	h2.section-header {
+		color: white;
+		font-weight: normal;
+		position: relative;
+		display: block;
+		z-index: 0;
+		text-transform: uppercase;
+		line-height: 50px;
+		padding: 0 15px;
+		margin: 0 auto 2em;
+		max-width: 320px;
+		text-align: center;
+
+		&:before {
+			content: "";
+			display: block;
+			background: $gray-dk;
+			width: 100%;
+			height: 50px;
+			z-index: -1;
+			position: absolute;
+			transform: skewY(1.1deg);
+			left: 0;
+		}
+	}
+
+	.events {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+		@include bp(phone-tablet) {
+			justify-content: space-around;
+		}
+	}
+
+	.event {
+		max-width: 380px;
+		position: relative;
+		margin-bottom: 3em;
+	}
+
+	.img-wrap {
+		position: relative;
+		overflow: hidden;
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 85%;
+			background-color: white;
+			width: 100%;
+			z-index: 0;
+			transform: skewY(6deg);
+			height: 50px;
+		}
+	}
+
+	.date {
+		background-color: white;
+		width: 120px;
+		height: 90px;
+		position: absolute;
+		top: 0;
+		right: 20px;
+		padding: 20px;
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: -10px;
+			background-color: white;
+			width: 100%;
+			z-index: 0;
+			transform: skewY(6deg);
+			height: 20px;
+			right: 0;
+		}
+
+		.month {
+			color: $scooter;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-family: Montserrat, sans-serif;
+			display: block;
+			text-align: center;
+			line-height: 30px;
+		}
+
+		.day {
+			color: $gray-dk;
+			font-family: Montserrat, sans-serif;
+			display: block;
+			text-align: center;
+			line-height: 30px;
+			font-size: 30px;
+		}
+	}
+
+	a {
+		color: $razz;
+		font-family: Montserrat, sans-serif;
+		box-shadow: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		position: relative;
+
+		&:before {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 2px;
+			background-color: $razz;
+			position: absolute;
+			top: -18px;
+		}
+
+		&:after {
+			content: "";
+			background: url(assets/img/pink-arrow.svg) no-repeat center center/contain;
+			width: 16px;
+			height: 16px;
+			display: inline-block;
+			transition: 0.3s;
+			position: absolute;
+			top: 2px;
+			right: -22px;
+		}
+
+		&:hover {
+
+			&:after {
+				right: -34px;
+			}
+		}
+	}
+}

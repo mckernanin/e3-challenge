@@ -1,0 +1,78 @@
+.site-header {
+
+	@media screen and (min-width: 56.875em) {
+		padding: 0 !important;
+		max-width: 1200px;
+		margin: 0 auto;
+
+		&:after {
+			content: "";
+			display: block;
+			width: 50vw;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 50px;
+			background: $scooter;
+		}
+	}
+
+	@media screen and (max-width: 56.87em) {
+		padding: 1em;
+	}
+}
+
+.custom-logo {
+	max-height: 105px;
+	max-width: 100%;
+	width: auto;
+	margin-top: 10px;
+}
+
+.site-header-menu {
+
+	@media screen and (min-width: 56.875em) {
+		border-top: 50px solid $scooter;
+		margin: 0;
+		flex: auto;
+
+		@include angle(before);
+
+		&:before {
+			background-color: white;
+			left: -30px;
+			top: -50px;
+			transform: skewX(28.5deg);
+			width: 60px;
+			height: 50px;
+		}
+	}
+}
+
+.site-branding {
+
+	@media screen and (min-width: 56.875em) {
+		margin: 0 165px 0 0 !important;
+	}
+
+	@include bp(phone-tablet) {
+		margin: 0 auto 0 0 !important;
+		padding-right: 30px;
+	}
+}
+
+.main-navigation {
+	@media screen and (min-width: 56.875em) {
+		li {
+
+			&:first-of-type {
+				margin-left: 200px;
+			}
+		}
+
+		a {
+			padding: 26px 0.875em;
+			text-transform: uppercase;
+		}
+	}
+}

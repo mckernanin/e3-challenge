@@ -1,0 +1,36 @@
+body {
+	background: white;
+
+	&:before,
+	&:after {
+		display: none !important;
+	}
+}
+
+.content-area.fullwidth {
+	float: none;
+	width: 100%;
+	margin-right: 0;
+}
+
+.site {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+.site-inner {
+	max-width: 100%;
+}
+
+.site-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 !important;
+}
+
+.entry-content {
+
+	@media screen and (max-width: 56.87em) {
+		margin: 0;
+	}
+}

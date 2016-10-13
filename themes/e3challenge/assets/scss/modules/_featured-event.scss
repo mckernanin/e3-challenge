@@ -1,0 +1,24 @@
+.featured-event {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	margin-bottom: 5em;
+
+	@include bp(phone) {
+		flex-flow: row wrap;
+	}
+
+	img {
+		max-width: 50%;
+
+		@include bp(phone) {
+			max-width: 90%;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	.content {
+		padding: 2em;
+	}
+}
