@@ -28,7 +28,7 @@ get_header(); ?>
 				</div>
 
 				<div class="featured-event">
-					<img src="http://localhost:3000/wp-content/uploads/2016/10/e3_challenge_hero.jpg" />
+					<img src="/wp-content/uploads/2016/10/e3_challenge_hero.jpg" />
 					<div class="content">
 						<h3>September 29, 2016</h3>
 						<h2>Real Rock Star Awards Gala</h2>
